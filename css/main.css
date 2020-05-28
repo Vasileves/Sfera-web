@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+body {
+  width: 100vw;
+  height: 100%;
+}
+
+.page {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  padding-top: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.container {
+  background-color: #ffff;
+  box-shadow: 0px 31px 70px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  margin-top: 38px;
+  min-width: 323px;
+  min-height: 244px;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.container h1 {
+  text-transform: uppercase;
+  position: absolute;
+  padding-top: 23px;
+  padding-left: 28px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 117.1%;
+  /* or 38px */
+
+  letter-spacing: 0.07em;
+
+  color: #000000;
+
+
+}
+
+.container:hover {
+  box-shadow: 0px 17px 40px rgba(0, 0, 0, 0.2);
+}
+
+#intro {
+  background-image: url('../img/main-bg.png');
+  background-size: 100%;
+  min-height: 137px;
+  height: 137px;
+}
+
+#intro h1 {
+  color: #fff;
+  padding-top: 68px;
+}
