@@ -18,13 +18,10 @@ body {
 
 .container {
   background-color: #ffff;
-  box-shadow: 0px 31px 70px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   margin-top: 38px;
   min-width: 323px;
   min-height: 244px;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
 }
 
 .container h1 {
@@ -37,17 +34,64 @@ body {
   font-weight: bold;
   font-size: 24px;
   line-height: 117.1%;
-  /* or 38px */
-
   letter-spacing: 0.07em;
-
   color: #000000;
+}
 
+.button_big {
+  margin-top: 38px;
+  min-width: 323px;
+  min-height: 69px;
+  background: #86C0FF;
+  border-radius: 20px;
+}
+
+.button_big img {
+  position: absolute;
+  margin-left: 271px;
+  margin-top: 19px;
+}
+
+.button_big p {
+  margin-top: 16px;
+  margin-left: 29px;
+  position: absolute;
+  text-transform: uppercase;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 136.1%;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
 
 }
 
-.container:hover {
-  box-shadow: 0px 17px 40px rgba(0, 0, 0, 0.2);
+.container, .button_big {
+  box-shadow: 0px 19px 29px rgba(0, 0, 0, 0.18);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.container:hover, .button_big:hover {
+  box-shadow: 0px 11px 26px rgba(0, 0, 0, 0.23);
+  /* transform: translateY(1px); */
+}
+
+.button_big:active {
+  box-shadow: 0px 11px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  transform: translateY(5px);
+}
+
+.slider {
+  min-height: 453px;
+  overflow: hidden;
+}
+
+.swiper-container img {
+  width: 323px;
+  height: 453px;
 }
 
 #intro {

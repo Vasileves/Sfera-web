@@ -5,18 +5,78 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/bg-light.css">
+    <link rel="stylesheet" href="css/swiper-min.css">
+    <script src="js/swiper-min.js"></script>
   </head>
+
   <body>
     <div class = 'flmenu'>
-
     </div>
     <div class = 'page'>
       <div class = 'container' id='intro'>
         <h1>ПОМОЖЕМ<br>СТАТЬ УСПЕШНЕЕ</h1>
       </div>
+      <div class = 'button_big'>
+        <img src='img/button_arrow_right.svg'/>
+        <p>ШКОЛА<br>ТАЙМ-МЕНЕДЖМЕНТА</p>
+      </div>
       <div class = 'container'>
         <h1>МЕРОПРИЯТИЯ</h1>
       </div>
+      <div class = 'container slider'>
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src='img/posters/1.svg'/></div>
+              <div class="swiper-slide"><img src='img/posters/2.svg'/></div>
+              <div class="swiper-slide"><img src='img/posters/3.svg'/></div>
+              <div class="swiper-slide"><img src='img/posters/4.svg'/></div>
+              <div class="swiper-slide"><img src='img/posters/5.svg'/></div>
+              <div class="swiper-slide"><img src='img/posters/6.svg'/></div>
+              <div class="swiper-slide"><img src='img/posters/7.jpg'/></div>
+              <div class="swiper-slide"><img src='img/posters/8.jpg'/></div>
+              <div class="swiper-slide"><img src='img/posters/9.jpg'/></div>
+              <div class="swiper-slide"><img src='img/posters/10.jpg'/></div>
+          </div>
+      </div>
     </div>
+    <div class = 'container'>
+      <h1>МЕРОПРИЯТИЯ</h1>
+    </div>
+ <!-- scripts -->
+
+    <script>
+    var mySwiper = new Swiper ('.swiper-container', {
+      // Optional parameters
+      direction: 'vertical',
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      //autoplay and space
+      height: 452,
+      speed: 4000,
+      spaceBetween: 1,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    })
+    </script>
+
   </body>
 </html>
