@@ -1,4 +1,7 @@
 
 body {
-  background-color: #EDF3F9;
+  background-color: #c6dff5;
+  /* background-size: 110%; */
+  background-image: url(../img/bg.png);
+  background-repeat: repeat;
 }

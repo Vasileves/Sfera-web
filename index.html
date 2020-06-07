@@ -11,20 +11,65 @@
   </head>
 
   <body>
-    <div class = 'flmenu'>
+    <div class='page'>
+
+
+      <!-- MENU WRAPPER -->
+
+    <div class='menu-wrapper'>
+      <div class='menu-container container'>
+        <img id='menu-cross' src='img/close.svg'/>
+        <ul>
+          <li>
+            ГЛАВНАЯ
+          </li>
+          <li>
+            ШКОЛА
+          </li>
+          <li>
+            СТУДИЯ РЕГЕНЕРАЦИИ
+          </li>
+        </ul>
+        <div class='social-container'>
+          <img src='img/social/vk.png'/>
+          <img src='img/social/fb.png'/>
+          <img src='img/social/twitter.png'/>
+          <img src='img/social/vk.png'/>
+        </div>
+      </div>
     </div>
-    <div class = 'page'>
-      <div class = 'container' id='intro'>
+
+      <!-- MENU -->
+
+      <nav class='flmenu'>
+        <div style='width: 323px; pointer-events: all;'>
+          <a href='http://google.ru'><img src='img/logo.svg'/></a>
+          <img style='float: right; margin-top: 5px;' src='img/menu.svg'/>
+        </div>
+      </nav>
+
+      <!-- CONTENT -->
+
+      <div class='container' id='intro'>
         <h1>ПОМОЖЕМ<br>СТАТЬ УСПЕШНЕЕ</h1>
       </div>
-      <div class = 'button_big'>
+      <div class='button_big'>
         <img src='img/button_arrow_right.svg'/>
         <p>ШКОЛА<br>ТАЙМ-МЕНЕДЖМЕНТА</p>
       </div>
-      <div class = 'container'>
+      <div class='container' >
         <h1>МЕРОПРИЯТИЯ</h1>
+        <h2 class='date'>02.07</h2>
+        <div class='divider'></div>
+        <div class='event-content'>
+          <img src="img/event/nomob.png"/>
+          <div>
+          <h3>14:40</h3>
+          <p>ЛЕКЦИЯ «ПРОДУКТИВНОСТЬ ДЛЯ СТУДЕНТОВ»</p>
+        </div>
+        </div>
       </div>
-      <div class = 'container slider'>
+      <div class='container slider'>
       <div class="swiper-container">
           <div class="swiper-wrapper">
               <!-- Slides -->
@@ -41,13 +86,29 @@
           </div>
       </div>
     </div>
-    <div class = 'container'>
-      <h1>МЕРОПРИЯТИЯ</h1>
+    <div class='container'>
+      <h1>НОВОСТИ</h1>
+      <div class='news-content'>
+       <p>ТРЕТИЙ КОМПЛЕКС ОТКРОЕТСЯ  <br>В СОКОЛЬНИКАХ</p>
+       <div class='divider'></div>
+       <p>НОВЫЙ КУРС ПЕРЕЗАГРУЗКА: <br>ПОДРОБНОСТИ И СТОИМОСТЬ</p>
+       <div class='divider'></div>
+       <p>АНОНСИРУЕМ СВЕЖИЕ<br>ЭКСПРЕСС-КУРСЫ НА YOUTUBE</p>
+     </div>
+       <div class='button_small'>
+        <p>ПОДРОБНЕЕ</p>
+         <img src=img/button-arrow.svg>
+       </div>
     </div>
+
+    <footer>
+      <p>© СФЕРА (2019-2023)</p>
+    </footer>
+
  <!-- scripts -->
 
     <script>
-    var mySwiper = new Swiper ('.swiper-container', {
+    var mySwiper=new Swiper ('.swiper-container', {
       // Optional parameters
       direction: 'vertical',
       loop: true,
@@ -67,11 +128,6 @@
         disableOnInteraction: false,
       },
 
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
 
     })
     </script>

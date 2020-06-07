@@ -2,14 +2,73 @@
 
 body {
   width: 100vw;
-  height: 100%;
+  margin-bottom: 25px;
 }
+
+.flmenu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1.5rem;
+  width: 100vw;
+  height: 136px;
+  z-index: 20;
+  background: linear-gradient(180.21deg, #E2F2FF 3.08%, rgba(202, 226, 248, 0.95) 62.85%, rgba(209, 234, 255, 0) 99.5%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.menu-wrapper {
+  position: fixed;
+  background-color: rgba(8, 30, 51, 0.9);
+  width: 100vw;
+  height: 100vh;
+  z-index: 30;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.menu-wrapper ul {
+  margin-left: 25px;
+  margin-top: 58px;
+}
+
+.menu-wrapper li {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160.1%;
+  letter-spacing: 0.07em;
+  color: #000000;
+  margin-bottom: 11px;
+}
+
+.social-container {
+  padding-left: 20px;
+  padding-top: 65px;
+  padding-bottom: 25px;
+}
+
+.social-container img {
+  box-shadow: 0px 18px 43px rgba(0, 0, 0, 0.16);
+  margin-right: 21px;
+  border-radius: 25pt;
+}
+
+#menu-cross {
+  position: absolute;
+  margin-left: 269px;
+  margin-top: 15px
+}
+
+
 
 .page {
   width: 100vw;
-  height: 100%;
   position: absolute;
-  padding-top: 110px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -21,12 +80,17 @@ body {
   border-radius: 20px;
   margin-top: 38px;
   min-width: 323px;
-  min-height: 244px;
+  min-height: 260px;
+  max-height: 454px;
 }
+
+.menu-container {
+
+}
+
 
 .container h1 {
   text-transform: uppercase;
-  position: absolute;
   padding-top: 23px;
   padding-left: 28px;
   font-family: IBM Plex Sans;
@@ -65,13 +129,52 @@ body {
   letter-spacing: 0.07em;
   color: #FFFFFF;
   border-radius: 20px;
+}
 
+.button_small {
+  width: 159px;
+  height: 31px;
+  margin-top: 25px;
+  margin-left: 25px;
+  top: 1553px;
+  background: #E4E4E4;
+  border-radius: 90px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.button_small:hover {
+  background-color: #D9DDE0;
+}
+
+.button_small p {
+  flex: 1 1 auto;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 160.1%;
+  letter-spacing: 0.07em;
+  padding-left: 15px;
+}
+
+.button_small img {
+  padding-right: 13px;
+}
+
+.button_small:hover img {
+  padding-right: 8px;
+}
+
+.container, .button_big, .button_small, .button_small img {
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
 .container, .button_big {
   box-shadow: 0px 19px 29px rgba(0, 0, 0, 0.18);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
 }
 
 .container:hover, .button_big:hover {
@@ -98,8 +201,97 @@ body {
 
 .swiper-wrapper {
     border-radius: 20px;
-    overflow:hidden
+    overflow: hidden;
 }
+
+.divider {
+  width: 126px;
+  height: 2px;
+  margin-left: 29px;
+  background-color: #C4C4C4;
+}
+
+.news-content .divider {
+margin: 10px 0 10px 29px;
+}
+
+p {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: 0.07em;
+}
+
+.date {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 160.1%;
+  letter-spacing: 0.07em;
+  margin-left: 29px;
+  margin-top: 12px;
+}
+
+.event-content img {
+  display: block;
+  width: 90px;
+  padding-left: 30px;
+  display: inline-inline-block;
+}
+
+.event-content h3 {
+  display: block;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 160.1%;
+  letter-spacing: 0.07em;
+  margin-left: 27px;
+}
+
+.news-content {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.event-content p, .news-content p {
+  display: block;
+  margin-left: 27px;
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: 0.07em;
+  width: 146px;
+}
+
+.news-content p {
+  width: 263px;
+  display: inline-block;
+}
+
+.event-content {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+footer p {
+  font-family: IBM Plex Sans;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 160.1%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  margin-top: 74px;
+  margin-bottom: 60px;
+}
+
 
 #intro {
   background-image: url('../img/main-bg.png');
