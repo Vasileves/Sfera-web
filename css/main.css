@@ -48,6 +48,17 @@ body {
   margin-bottom: 11px;
 }
 
+#menu-content {
+  width: 323px;
+  pointer-events: all;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  #menu-content {
+    width: 671px;
+  }
+}
+
 .social-container {
   padding-left: 20px;
   padding-top: 50px;
@@ -66,6 +77,23 @@ body {
   margin-top: 15px
 }
 
+.double-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .double-flex {
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+}
+
+
 .page {
   width: 100vw;
   position: absolute;
@@ -75,11 +103,16 @@ body {
   flex-direction: column;
 }
 
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
 .container {
   background-color: #ffff;
   border-radius: 20px;
   margin-top: 38px;
-  min-width: 323px;
+  width: 323px;
   min-height: 260px;
   max-height: 454px;
 }
@@ -102,21 +135,27 @@ body {
   color: #000000;
 }
 
-.button_big {
+.button-big {
   margin-top: 38px;
-  min-width: 323px;
+  width: 323px;
   min-height: 69px;
   background: #86C0FF;
   border-radius: 20px;
 }
 
-.button_big img {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .button-big:first-of-type, .slider {
+    margin-right: 38px;
+  }
+}
+
+.button-big img {
   position: absolute;
   margin-left: 271px;
   margin-top: 19px;
 }
 
-.button_big p {
+.button-big p {
   margin-top: 16px;
   margin-left: 29px;
   position: absolute;
@@ -168,29 +207,30 @@ body {
   padding-right: 8px;
 }
 
-.container, .button_big, .button_small, .button_small img {
+.container, .button-big, .button_small, .button_small img {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
 
-.container, .button_big {
+.container, .button-big {
   box-shadow: 0px 19px 29px rgba(0, 0, 0, 0.18);
 }
 
-.container:hover, .button_big:hover {
+.container:hover, .button-big:hover {
   box-shadow: 0px 11px 26px rgba(0, 0, 0, 0.23);
   /* transform: translateY(1px); */
 }
 
-.button_big:active {
+.button-big:active {
   box-shadow: 0px 11px 12px rgba(0, 0, 0, 0.2);
   transform: translateY(5px);
 }
 
 .slider {
-  width: 323px;
-  min-height: 453px;
+  width: 320px;
+  min-height: 440px;
   overflow: hidden;
+  border-radius: 20px;
 }
 
 .swiper-container img {
@@ -203,6 +243,8 @@ body {
     border-radius: 20px;
     overflow: hidden;
 }
+
+
 
 .divider {
   width: 126px;
@@ -297,7 +339,13 @@ footer p {
   background-image: url('../img/main-bg.png');
   background-size: 100%;
   min-height: 137px;
-  height: 137px;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  #intro {
+    width: 671px;
+    height: 201px;
+  }
 }
 
 #intro h1 {
