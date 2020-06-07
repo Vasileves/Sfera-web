@@ -13,12 +13,11 @@
   <body>
     <div class='page'>
 
-
       <!-- MENU WRAPPER -->
 
-    <div class='menu-wrapper'>
+    <div id='menu-wrapper'>
       <div class='menu-container container'>
-        <img id='menu-cross' src='img/close.svg'/>
+        <img onclick="unwrapMenu()" id='menu-cross' src='img/close.svg'/>
         <ul>
           <li>
             ГЛАВНАЯ
@@ -44,7 +43,7 @@
       <nav class='flmenu'>
         <div style='width: 323px; pointer-events: all;'>
           <a href='http://google.ru'><img src='img/logo.svg'/></a>
-          <img style='float: right; margin-top: 5px;' src='img/menu.svg'/>
+          <img onclick="unwrapMenu()" style='float: right;' src='img/menu.svg'/>
         </div>
       </nav>
 
@@ -86,6 +85,7 @@
           </div>
       </div>
     </div>
+
     <div class='container'>
       <h1>НОВОСТИ</h1>
       <div class='news-content'>
@@ -131,6 +131,18 @@
 
     })
     </script>
+    <script type="text/javascript">
+    function unwrapMenu() {
+      var x = document.getElementById("menu-wrapper");
+      if (x.style.display === "none") {
+        x.style.display = "flex";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    </script>
+
 
   </body>
 </html>
