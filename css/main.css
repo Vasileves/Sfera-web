@@ -28,8 +28,8 @@ body {
   align-items: flex-start;
   justify-content: center;
   display: none;
-  -webkit-animation: fadein 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: fadein 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: fadein 0.30s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: fadein 0.30s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 #menu-wrapper ul {
@@ -77,6 +77,7 @@ body {
   margin-top: 15px
 }
 
+
 .double-flex {
   display: flex;
   align-items: center;
@@ -118,8 +119,8 @@ body {
 }
 
 .menu-container {
-  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-bottom 0.30s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-bottom 0.30s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .container h1 {
@@ -148,6 +149,13 @@ body {
     margin-right: 38px;
   }
 }
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+#event-breakpoint {
+    width: 671px;
+  }
+}
+
 
 .button-big img {
   position: absolute;
