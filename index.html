@@ -33,7 +33,7 @@
           <img src='img/social/vk.png'/>
           <img src='img/social/fb.png'/>
           <img src='img/social/twitter.png'/>
-          <img src='img/social/vk.png'/>
+          <img src='img/social/call.png'/>
         </div>
       </div>
     </div>
@@ -65,6 +65,8 @@
         </div>
       </div>
 
+
+      <div class='pc-flex'>
       <div class='container' id='event-breakpoint'>
         <h1>МЕРОПРИЯТИЯ</h1>
         <div class="double-flex">
@@ -80,34 +82,33 @@
       </div>
         </div>
          <div>
-        <h2 class='date'>02.07</h2>
+        <h2 class='date'>12.07</h2>
         <div class='divider'></div>
         <div class='event-content'>
           <img src="img/event/nomob.png"/>
           <div>
-          <h3>14:40</h3>
-          <p>ЛЕКЦИЯ «ПРОДУКТИВНОСТЬ ДЛЯ СТУДЕНТОВ»</p>
+          <h3>11:32</h3>
+          <p>АНОНС НОВЫХ КУРСОСВ</p>
         </div>
         </div>
       </div>
     </div>
       </div>
-
       <div class="double-flex">
       <div class='container slider'>
       <div class="swiper-container">
           <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide"><img src='img/posters/1.svg'/></div>
-              <div class="swiper-slide"><img src='img/posters/2.svg'/></div>
-              <div class="swiper-slide"><img src='img/posters/3.svg'/></div>
-              <div class="swiper-slide"><img src='img/posters/4.svg'/></div>
-              <div class="swiper-slide"><img src='img/posters/5.svg'/></div>
-              <div class="swiper-slide"><img src='img/posters/6.svg'/></div>
-              <div class="swiper-slide"><img src='img/posters/7.jpg'/></div>
-              <div class="swiper-slide"><img src='img/posters/8.jpg'/></div>
-              <div class="swiper-slide"><img src='img/posters/9.jpg'/></div>
-              <div class="swiper-slide"><img src='img/posters/10.jpg'/></div>
+              <div class="swiper-slide"><img src='img/posters/1.png'/></div>
+              <div class="swiper-slide"><img src='img/posters/2.png'/></div>
+              <div class="swiper-slide"><img src='img/posters/3.png'/></div>
+              <div class="swiper-slide"><img src='img/posters/4.png'/></div>
+              <div class="swiper-slide"><img src='img/posters/5.png'/></div>
+              <div class="swiper-slide"><img src='img/posters/6.png'/></div>
+              <div class="swiper-slide"><img src='img/posters/7.png'/></div>
+              <div class="swiper-slide"><img src='img/posters/8.png'/></div>
+              <div class="swiper-slide"><img src='img/posters/9.png'/></div>
+              <div class="swiper-slide"><img src='img/posters/10.png'/></div>
           </div>
       </div>
     </div>
@@ -129,6 +130,7 @@
        </div>
     </div>
   </div>
+</div>
 
     <footer>
       <p>© СФЕРА (2019-2023)</p>
@@ -136,7 +138,9 @@
 
  <!-- scripts -->
 
-    <script>
+    <script type="text/javascript">
+    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+          if (viewportWidth < 1399) {
     var mySwiper=new Swiper ('.swiper-container', {
       // Optional parameters
       direction: 'vertical',
@@ -148,17 +152,42 @@
       },
 
       //autoplay and space
-      width: 323,
-      height: 452,
+        width: 323,
+        height: 452,
+
       speed: 2000,
-      spaceBetween: 1,
+      spaceBetween: 0,
       autoplay: {
         delay: 3000,
         disableOnInteraction: false,
       },
 
 
-    })
+    })}
+  else {
+    var mySwiper=new Swiper ('.swiper-container', {
+      // Optional parameters
+      direction: 'vertical',
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      //autoplay and space
+        width: 183,
+        height: 303,
+
+      speed: 2000,
+      spaceBetween: 0,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+
+
+    })}
     </script>
     <script type="text/javascript">
     function unwrapMenu() {
