@@ -9,11 +9,9 @@
     <link rel="stylesheet" href="css/swiper-min.css">
     <script src="js/swiper-min.js"></script>
   </head>
-
   <body>
-    <div class='page'>
 
-      <!-- MENU WRAPPER -->
+    <!-- MENU WRAPPER -->
 
     <div id='menu-wrapper'>
       <div class='menu-container container'>
@@ -38,169 +36,189 @@
       </div>
     </div>
 
-      <!-- MENU -->
+    <!-- MENU -->
 
-      <nav class='flmenu'>
-        <div id= 'menu-content'>
-          <a href='http://google.ru'><img src='img/logo.svg'/></a>
-          <img onclick="unwrapMenu()" style='float: right;' src='img/menu.svg'/>
-        </div>
-      </nav>
+    <nav class='flmenu'>
+      <div id= 'menu-content'>
+        <a href='http://google.ru'><img src='img/logo.svg'/></a>
+        <img onclick="unwrapMenu()" style='float: right;' src='img/menu.svg'/>
+      </div>
+    </nav>
+    <div class='page'>
 
-      <!-- CONTENT -->
+      <!-- BUTTONS -->
 
       <div class='container' id='intro'>
         <h1>ПОМОЖЕМ<br>СТАТЬ УСПЕШНЕЕ</h1>
       </div>
-
-      <div class='double-flex'>
+      <div class='button-flex'>
         <div class='button-big'>
           <img src='img/button_arrow_right.svg'/>
           <p>ШКОЛА<br>ТАЙМ-МЕНЕДЖМЕНТА</p>
         </div>
-
         <div class='button-big'>
           <img src='img/button_arrow_right.svg'/>
           <p>СТУДИЯ<br>РЕГЕНЕРАЦИИ</p>
         </div>
       </div>
 
+      <!-- EVENTS -->
 
-      <div class='pc-flex'>
-      <div class='container' id='event-breakpoint'>
-        <h1>МЕРОПРИЯТИЯ</h1>
-        <div class="double-flex">
-        <div>
-        <h2 class='date'>02.07</h2>
-        <div class='divider'></div>
-        <div class='event-content'>
-          <img src="img/event/nomob.png"/>
-          <div>
-          <h3>14:40</h3>
-          <p>ЛЕКЦИЯ «ПРОДУКТИВНОСТЬ ДЛЯ СТУДЕНТОВ»</p>
-        </div>
-      </div>
-        </div>
-         <div>
-        <h2 class='date'>12.07</h2>
-        <div class='divider'></div>
-        <div class='event-content'>
-          <img src="img/event/nomob.png"/>
-          <div>
-          <h3>11:32</h3>
-          <p>АНОНС НОВЫХ КУРСОСВ</p>
-        </div>
-        </div>
-      </div>
-    </div>
-      </div>
-      <div class="double-flex">
-      <div class='container slider'>
-      <div class="swiper-container">
-          <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide"><img src='img/posters/1.png'/></div>
-              <div class="swiper-slide"><img src='img/posters/2.png'/></div>
-              <div class="swiper-slide"><img src='img/posters/3.png'/></div>
-              <div class="swiper-slide"><img src='img/posters/4.png'/></div>
-              <div class="swiper-slide"><img src='img/posters/5.png'/></div>
-              <div class="swiper-slide"><img src='img/posters/6.png'/></div>
-              <div class="swiper-slide"><img src='img/posters/7.png'/></div>
-              <div class="swiper-slide"><img src='img/posters/8.png'/></div>
-              <div class="swiper-slide"><img src='img/posters/9.png'/></div>
-              <div class="swiper-slide"><img src='img/posters/10.png'/></div>
+      <div class='desktop-flex'>
+        <div class='container' id='event'>
+          <h1>МЕРОПРИЯТИЯ</h1>
+          <div class="double-flex">
+            <div class='event-unit'>
+                <h2 class='date'>02.07</h2>
+                <div class='divider'></div>
+              <div class='event-content'>
+                <img class="mobile-only" src="img/event/nomob.png"/>
+                <div>
+                  <h3>14:40</h3>
+                  <p>ЛЕКЦИЯ «ПРОДУКТИВНОСТЬ ДЛЯ СТУДЕНТОВ»</p>
+                <img class="desktop-only" src="img/event/nomob.png"/>
+              </div>
+              </div>
+            </div>
+            <div class='event-unit'>
+              <div class='samedate'></div>
+              <div class='event-content'>
+                <img class='mobile-only' src="img/event/nomob.png"/>
+                <div>
+                  <h3>11:32</h3>
+                  <p>АНОНС НОВЫХ КУРСОСВ</p>
+                  <img class="desktop-only" src="img/event/nomob.png"/>
+                </div>
+              </div>
+            </div>
+            <div class='event-unit desktop-only'>
+              <h2 class='date'>05.07</h2>
+              <div class='divider'></div>
+              <div class='event-content'>
+                <img class='mobile-only' src="img/event/nomob.png"/>
+                <div>
+                  <h3>08:25</h3>
+                  <p>АНОНС НОВЫХ КУРСОСВ</p>
+                  <img class="desktop-only" src="img/event/nomob.png"/>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+        <div class="double-flex">
+
+          <!-- SLIDES -->
+
+          <div class='container slider'>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src='img/posters/1.png'/></div>
+                <div class="swiper-slide"><img src='img/posters/2.png'/></div>
+                <div class="swiper-slide"><img src='img/posters/3.png'/></div>
+                <div class="swiper-slide"><img src='img/posters/4.png'/></div>
+                <div class="swiper-slide"><img src='img/posters/5.png'/></div>
+                <div class="swiper-slide"><img src='img/posters/6.png'/></div>
+                <div class="swiper-slide"><img src='img/posters/7.png'/></div>
+                <div class="swiper-slide"><img src='img/posters/8.png'/></div>
+                <div class="swiper-slide"><img src='img/posters/9.png'/></div>
+                <div class="swiper-slide"><img src='img/posters/10.png'/></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- NEWS -->
+
+          <div class='container' id='news'>
+            <h1>НОВОСТИ</h1>
+            <div class='news-content'>
+              <p>ТРЕТИЙ КОМПЛЕКС ОТКРОЕТСЯ  <br>В СОКОЛЬНИКАХ</p>
+              <div class='divider'></div>
+              <p>НОВЫЙ КУРС ПЕРЕЗАГРУЗКА: <br>ПОДРОБНОСТИ И СТОИМОСТЬ</p>
+              <div class='divider'></div>
+              <p>АНОНСИРУЕМ СВЕЖИЕ<br>ЭКСПРЕСС-КУРСЫ НА YOUTUBE</p>
+              <div class='divider'></div>
+              <p>ТЕПЕРЬ ДОСТУПНА УСЛУГА<br>ПЕРСОНАЛЬНОГО КОУЧА!</p>
+            </div>
+            <div class='button_small'>
+              <p>ПОДРОБНЕЕ</p>
+              <img src=img/button-arrow.svg>
+            </div>
+          </div>
+          <div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class='container'>
-      <h1>НОВОСТИ</h1>
-      <div class='news-content'>
-       <p>ТРЕТИЙ КОМПЛЕКС ОТКРОЕТСЯ  <br>В СОКОЛЬНИКАХ</p>
-       <div class='divider'></div>
-       <p>НОВЫЙ КУРС ПЕРЕЗАГРУЗКА: <br>ПОДРОБНОСТИ И СТОИМОСТЬ</p>
-       <div class='divider'></div>
-       <p>АНОНСИРУЕМ СВЕЖИЕ<br>ЭКСПРЕСС-КУРСЫ НА YOUTUBE</p>
-       <div class='divider'></div>
-       <p>ТЕПЕРЬ ДОСТУПНА УСЛУГА<br>ПЕРСОНАЛЬНОГО КОУЧА!</p>
-     </div>
-       <div class='button_small'>
-        <p>ПОДРОБНЕЕ</p>
-         <img src=img/button-arrow.svg>
-       </div>
-    </div>
-  </div>
-</div>
 
     <footer>
       <p>© СФЕРА (2019-2023)</p>
     </footer>
 
- <!-- scripts -->
+
+    <!-- scripts -->
 
     <script type="text/javascript">
-    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-          if (viewportWidth < 1399) {
-    var mySwiper=new Swiper ('.swiper-container', {
+      var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+      if (viewportWidth < 1399) {
+      var mySwiper=new Swiper ('.swiper-container', {
       // Optional parameters
       direction: 'vertical',
       loop: true,
 
       // If we need pagination
       pagination: {
-        el: '.swiper-pagination',
+      el: '.swiper-pagination',
       },
 
       //autoplay and space
-        width: 323,
-        height: 452,
+      width: 323,
+      height: 452,
 
       speed: 2000,
       spaceBetween: 0,
       autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
+      delay: 3000,
+      disableOnInteraction: false,
       },
 
 
-    })}
-  else {
-    var mySwiper=new Swiper ('.swiper-container', {
+      })}
+      else {
+      var mySwiper=new Swiper ('.swiper-container', {
       // Optional parameters
       direction: 'vertical',
       loop: true,
 
       // If we need pagination
       pagination: {
-        el: '.swiper-pagination',
+      el: '.swiper-pagination',
       },
 
       //autoplay and space
-        width: 183,
-        height: 303,
+      width: 225,
+      height: 375,
 
       speed: 2000,
       spaceBetween: 0,
       autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
+      delay: 3000,
+      disableOnInteraction: false,
       },
 
 
-    })}
+      })}
     </script>
     <script type="text/javascript">
-    function unwrapMenu() {
+      function unwrapMenu() {
       var x = document.getElementById("menu-wrapper");
       if (x.style.display === "none") {
-        x.style.display = "flex";
+      x.style.display = "flex";
       } else {
-        x.style.display = "none";
+      x.style.display = "none";
       }
-    }
+      }
 
     </script>
-
-
   </body>
 </html>

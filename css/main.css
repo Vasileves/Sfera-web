@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
 
+
+
+
 body {
   width: 100vw;
   margin-bottom: 25px;
@@ -84,7 +87,6 @@ body {
 
 .page {
   width: 100vw;
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -284,6 +286,11 @@ p {
   margin-bottom: 25px;
 }
 
+.samedate {
+  width: 126px;
+  height: 50px;
+}
+
 .event-content p, .news-content p {
   display: block;
   margin-left: 27px;
@@ -330,9 +337,18 @@ footer p {
   padding-top: 68px;
 }
 
+
+@media only screen and (max-device-width : 768px) {
+img.desktop-only, .desktop-only, .samedate {
+  display: none;
+}
+}
+
+
 /* TABLET */
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1366px) {
+
   #intro {
     width: 671px;
     height: 201px;
@@ -342,7 +358,14 @@ footer p {
       margin-right: 38px;
     }
 
-    #event-breakpoint {
+    .button-flex {
+      display: flex;
+      align-items:flex-start;
+      justify-content: flex-start;
+      flex-direction: row;
+    }
+
+    #event {
         width: 671px;
       }
 
@@ -353,11 +376,19 @@ footer p {
       flex-direction: row;
     }
 
+
     #menu-content {
       width: 671px;
     }
 
+    img.desktop-only, .desktop-only {
+      display: none;
+    }
+
   }
+
+
+/* DESKTOP */
 
   @media only screen and (min-device-width : 1366px) {
     #intro {
@@ -369,8 +400,22 @@ footer p {
         margin-right: 38px;
       }
 
-      #event-breakpoint {
-          width: 671px;
+      #event {
+          width: 683px;
+          height: 375px;
+        }
+
+
+        .event-content p {
+          width: 146px;
+          height: 55px;
+        }
+
+        img.desktop-only {
+          margin-top: 22px;
+          width: 178px;
+          height: 115px;
+          margin-right: 13px;
         }
 
       .double-flex {
@@ -380,30 +425,62 @@ footer p {
         flex-direction: row;
       }
 
-      .pc-flex {
+      .button-flex {
         display: flex;
         align-items:flex-start;
         justify-content: flex-start;
         flex-direction: row;
       }
 
+      .desktop-flex {
+        display: flex;
+        align-items:flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+      }
+
+      .page {
+        width: 1305px;
+        margin: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+      }
+
+      #news {
+        width: 321px;
+        max-height: 454px;
+      }
+
+      #news-content p {
+        width: 305px;
+      }
 
       #menu-content {
         width: 1271px;
       }
 
       .slider {
-        width: 183px;
+        width: 225px;
         min-height: 302px;
-        max-height: 302px;
+        max-height: 375px;
         overflow: hidden;
         border-radius: 20px;
       }
 
       .swiper-container img {
         transform: translateX(-2px);
-        width: 185px;
-        height: 302px;
+        width: 228px;
+        height: 375px;
+      }
+
+      .double-flex:nth-of-type(2) {
+        margin-left: 38px;
+      }
+
+      img.mobile-only {
+        display: none;
       }
 
     }
