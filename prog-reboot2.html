@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content= "text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/swiper-min.css">
+    <link rel="stylesheet" type="text/css" href="css/ui.css">
+    <link rel="stylesheet" type="text/css" href="css/prog.css">
+    <link rel="stylesheet" type="text/css" href="css/bg-light.css">
+    <script src="js/swiper.js"></script>
+    <script src="js/swiper-min.js"></script>
+  </head>
+  <body>
+    <!-- MENU WRAPPER -->
+    <div id='menu-wrapper'>
+      <div class='menu-container container'>
+        <img onclick="unwrapMenu()" id='menu-cross' src='img/close.svg'/>
+        <ul>
+          <li>
+            <a href='index.html'>ГЛАВНАЯ</a>
+          </li>
+          <li>
+            <a href='school.html'>ШКОЛА</a>
+          </li>
+          <li>
+            <a href='regen.html'>СТУДИЯ РЕГЕНЕРАЦИИ</a>
+          </li>
+        </ul>
+        <div class='social-container'>
+          <img src='img/social/vk.png'/>
+          <img src='img/social/fb.png'/>
+          <img src='img/social/twitter.png'/>
+          <img src='img/social/call.png'/>
+        </div>
+      </div>
+    </div>
+    <!-- MENU STICKY -->
+    <nav class='flmenu'>
+      <div id= 'menu-content'>
+        <a href='index.html'><img class='mobile-only' src='img/logo.svg'/></a>
+        <a href='index.html'><img class='desktop-only' src='img/logo-big.svg'/></a>
+        <img class='mobile-only' onclick="unwrapMenu()" style='float: right;' src='img/menu.svg'/>
+        <img class='desktop-only' onclick="unwrapMenu()" style='float: right; width:33.74px;' src='img/menu-big.svg'/>
+      </div>
+    </nav>
+    <div class='page'>
+
+
+    <!-- PROG-INTRO -->
+    <div class='container' id="intro">
+      <div class="double-flex">
+      <div class='graphic'><h1>ПРОГРАММА<br>«ПЕРЕЗАПУСК»</h1></div>
+      <div id='prog-content'>
+      <p id='prog-desc'>
+        Самоорганизация — крайне ценный в наше время навык, к тренировке которого нужен основательный подход. Школа тайм-менеджмента позволяет освоить основы.
+      </p>
+      <div class='progmap-data-flex'>
+        <div>
+          <h2>ДЛИТЕЛЬНОСТЬ</h2>
+          <p>72 ЧАСА</p>
+        </div>
+        <div>
+          <h2>ИНТЕНСИВНОСТЬ</h2>
+          <img class='rate' src='img/dotrate/rate4.svg'/>
+      </div>
+      <div>
+        <h2>ФОРМАТ</h2>
+        <p>ОНЛАЙН + ОФФЛАЙН</p>
+      </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class='double-flex'>
+  <div class='container' id='about'>
+    <h1>О ПРОГРАММЕ</h1>
+    <p>Самоорганизация — крайне ценный в наше время навык,
+к тренировке которого нужен основательный подход.</p>
+  </div>
+  <div class='container nums'>
+    <div class='nums-content'>
+    <div class='numframe'><p>14</p></div>
+    <p>ОЧНЫХ ПРАКТИК</p>
+  </div>
+  <div class='nums-content'>
+  <div class='numframe'><p>9</p></div>
+  <p>ОНЛАЙН-ЗАНЯТИЙ</p>
+</div>
+<div class='nums-content'>
+<div class='numframe'><p>27</p></div>
+<p>ЗАДАНИЙ</p>
+</div>
+  </div>
+</div>
+
+
+  <!-- SCRIPTS -->
+  <script type="text/javascript">
+    function unwrapMenu() {
+    var x = document.getElementById("menu-wrapper");
+    if (x.style.display === "none") {
+    x.style.display = "flex";
+    } else {
+    x.style.display = "none";
+    }
+    }
+
+  </script>
+
+  </body>
+</html>

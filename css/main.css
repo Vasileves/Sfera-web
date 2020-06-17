@@ -263,6 +263,7 @@
       #news {
         width: 321px;
         max-height: 454px;
+        margin-left: 0px;
       }
 
       #news-content p {
