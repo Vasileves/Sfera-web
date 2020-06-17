@@ -47,18 +47,17 @@
   color: #000000;
 }
 
-.container > img, .progmap-data-flex img {
-}
+
 
 .progmap-data-flex h2 {
   font-family: IBM Plex Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 15px ;
+  font-size: 15pt;
   line-height: 20px;
   letter-spacing: 0.05em;
   color: #000000;
-  margin-bottom: 5px;
+  margin-bottom: 13px;
 }
 
 .progmap-data-flex p {
@@ -93,9 +92,7 @@
 align-items: center;
 }
 
-#about p {
-  margin-left: 28px;
-}
+
 
 
 
@@ -226,11 +223,23 @@ align-items: center;
     margin-left: 0;
   }
 
+  .app {
+    height: 355px;
+  }
+
+  #about {
+    height: 329px;
+  }
+
   #intro h1 {
     padding-top: 300px;
     font-size: 21pt;
   }
 
+  .progmap-data-flex h2 {
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
 
   .graphic {
     height: 400px;
@@ -328,6 +337,28 @@ align-items: center;
       width: 400px;
       height: 150px;
       margin-left: 0;
+    }
+
+    .app {
+      height: 355px;
+    }
+
+    #phone {
+      position: absolute;
+      margin-left: 12px;
+      margin-top: 24px;
+    }
+
+    #google {
+      position: absolute;
+      margin-left: 138px;
+      margin-top: 47px;
+    }
+
+    #apple {
+      position: absolute;
+      margin-left: 138px;
+      margin-top: 97px;
     }
 
     .graphic {
