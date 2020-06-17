@@ -7,8 +7,6 @@
     <link rel="stylesheet" type="text/css" href="css/ui.css">
     <link rel="stylesheet" type="text/css" href="css/school.css">
     <link rel="stylesheet" type="text/css" href="css/bg-light.css">
-    <link rel="stylesheet" href="css/swiper-min.css">
-    <script src="js/swiper-min.js"></script>
   </head>
   <body>
 
@@ -37,7 +35,7 @@
       </div>
     </div>
 
-    <!-- MENU -->
+    <!-- MENU STICKY -->
 
     <nav class='flmenu'>
       <div id= 'menu-content'>
@@ -53,68 +51,86 @@
       <!-- SCHOOL-INTRO -->
 
     <div class='intro container'>
-      <div class='graphic'></div>
+      <div class='graphic'><h1>КУРСЫ<br>ДЛЯ ЖИЗНИ</h1></div>
+    <p>
+      Самоорганизация — крайне ценный<br>в наше время навык,
+к тренировке которого нужен основательный подход. Школа тайм-менеджмента позволяет освоить основы мотивации, эффективного отдыха<br> и сбалансированного графика.
+    </p>
     </div>
 
+    <!-- PROGMAPS -->
 
+    <div class="container progmap">
+      <h1>ПЕРЕЗАПУСК 2.0</h1>
+      <p>Полная защита от прокрастинации<br> в обновлённой версии<br>нашего лучшего курса!</p>
+      <h2>ДЛИТЕЛЬНОСТЬ</h2>
+      <p>72 чаcа</p>
+      <h2>ИНТЕНСИВНОСТЬ</h2>
+      <img class='rate' src='img/dotrate/rate4.svg'/>
+      <h2>ФОРМАТ</h2>
+      <p>Онлайн + оффлайн</p>
+      <div class='button-small'>
+        <p>ПОДРОБНЕЕ</p>
+        <img src=img/button-arrow.svg>
+      </div>
+    </div>
 
+    <div class="container progmap">
+      <h1>ПЕРЕЗАПУСК ЛАЙТ</h1>
+      <p>Всё, что нужно знать<br>о прокрастинации<br>в упрощённом формате.</p>
+      <h2>ДЛИТЕЛЬНОСТЬ</h2>
+      <p>18 часов</p>
+      <h2>ИНТЕНСИВНОСТЬ</h2>
+      <img class='rate' src='img/dotrate/rate3.svg'/>
+      <h2>ФОРМАТ</h2>
+      <p>Онлайн</p>
+      <div class='button-small'>
+        <p>ПОДРОБНЕЕ</p>
+        <img src=img/button-arrow.svg>
+      </div>
+    </div>
+
+    <div class="container progmap">
+      <h1>ПЛАНИРОВЩИК</h1>
+      <p>Лучшее решение для людей<br>с высокой нагрузкой.</p>
+      <h2>ДЛИТЕЛЬНОСТЬ</h2>
+      <p>18 часов</p>
+      <h2>ИНТЕНСИВНОСТЬ</h2>
+      <img class='rate' src='img/dotrate/rate2.svg'/>
+      <h2>ФОРМАТ</h2>
+      <p>Онлайн</p>
+      <div class='button-small'>
+        <p>ПОДРОБНЕЕ</p>
+        <img src=img/button-arrow.svg>
+      </div>
+    </div>
+
+    <div class="container progmap">
+      <h1>ВОССТАНОВЛЕНИЕ</h1>
+      <p>Научитесь восстанавливать силы<br>и получать удовольствие от отдыха</p>
+      <h2>ДЛИТЕЛЬНОСТЬ</h2>
+      <p>19 часов</p>
+      <h2>ИНТЕНСИВНОСТЬ</h2>
+      <img class='rate' src='img/dotrate/rate1.svg'/>
+      <h2>ФОРМАТ</h2>
+      <p>Онлайн</p>
+      <div class='button-small'>
+        <p>ПОДРОБНЕЕ</p>
+        <img src=img/button-arrow.svg>
+      </div>
+    </div>
+
+    <div class="container review">
+      <h1>ОТЗЫВЫ</h1>
+    </div>
+
+    <!-- FOOTER -->
     <footer>
       <p>© СФЕРА (2019-2023)</p>
     </footer>
 
     <!-- SCRIPTS -->
 
-    <script type="text/javascript">
-      var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-      if (viewportWidth < 1399) {
-      var mySwiper=new Swiper ('.swiper-container', {
-      // Optional parameters
-      direction: 'vertical',
-      loop: true,
-
-      // If we need pagination
-      pagination: {
-      el: '.swiper-pagination',
-      },
-
-      //autoplay and space
-      width: 323,
-      height: 452,
-
-      speed: 2000,
-      spaceBetween: 0,
-      autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-      },
-
-
-      })}
-      else {
-      var mySwiper=new Swiper ('.swiper-container', {
-      // Optional parameters
-      direction: 'vertical',
-      loop: true,
-
-      // If we need pagination
-      pagination: {
-      el: '.swiper-pagination',
-      },
-
-      //autoplay and space
-      width: 225,
-      height: 375,
-
-      speed: 2000,
-      spaceBetween: 0,
-      autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-      },
-
-
-      })}
-    </script>
     <script type="text/javascript">
       function unwrapMenu() {
       var x = document.getElementById("menu-wrapper");
