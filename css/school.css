@@ -19,22 +19,26 @@
   line-height: 117.1%;
 }
 
+
 #intro p {
   margin: 30px 30px 30px 30px;
   width: 263px;
+
 }
 
-#progmap h1 {
+.container h1 {
   margin-bottom: 25px;
 }
 
-#progmap > p {
+.container > p, .progmap-data-flex p {
   margin-top: 5px;
   margin-left: 30px;
   width: 263px;
+  font-size: 13pt;
+
 }
 
-#progmap > h2 {
+.container > h2, .progmap-data-flex h2 {
   margin-top: 20px;
   margin-left: 30px;
   font-family: IBM Plex Sans;
@@ -46,21 +50,25 @@
   color: #000000;
 }
 
-#progmap > img {
+.container > img, .progmap-data-flex img {
   margin-left: 30px;
   margin-top: 10px;
 }
 
 #review {
-  min-height: 220px;
+  height: 297px;
+}
+
+.button-small {
+  position: sticky;
 }
 
 .review-content {
   margin-left: 30px;
-  margin-top: 25px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 250px;
 }
 
 .review-content h1 {
@@ -82,18 +90,36 @@ line-height: 20px;
 letter-spacing: 0.05em;
 color: #000000;
 margin-left: 12px;
+text-transform: uppercase;
 }
+
+
 
 #review p {
   margin-left: 30px;
   margin-top: 13px;
+  font-size: 13pt;
+
+}
+
+.progmap {
+  height: 433px;
 }
 
 .swiper-container {
     width: 323px;
-    height: 203px;
+    height: 184px;
     margin-left: 0;
     margin-right: 0;
+    margin-top: 43px;
+}
+
+.progmap-data-flex {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 15px;
 }
 
 
@@ -103,6 +129,10 @@ margin-left: 12px;
   img.desktop-only, .desktop-only {
     display: none;
   }
+
+  .progmap-data-flex {
+    flex-direction: column;
+  }
 }
 
 /* TABLET */
@@ -111,10 +141,73 @@ margin-left: 12px;
   img.desktop-only, .desktop-only {
     display: none;
   }
+  .double-flex .container:first-of-type {
+    margin-right: 20px;
+  }
+  #intro {
+    width: 671px;
+    height: 281px;
+  }
+
+  #intro h1 {
+    padding-top: 178px;
+    font-size: 32px;
+  }
+
+  #intro p {
+    margin: 60px 30px 30px 50px;
+  }
+
+  .graphic{
+    height: 282px;
+  }
+
+  .progmap-data-flex {
+    flex-direction: column;
+  }
+}
 
 /* DESKTOP */
 
   @media only screen and (min-device-width : 1366px) {
+    #intro {
+      width: 1305px;
+      height: 344px;
+    }
+
+    #intro h1 {
+      padding-top: 216px;
+      font-size: 42px;
+    }
+
+    #intro p {
+      margin-top: 99px;
+      margin-left: 71px;
+      font-size: 13pt;
+      width: 350px;
+    }
+
+    .graphic {
+      width: 630px;
+      height:344px;
+    }
+
+    .progmap {
+      width: 633px;
+      height: 333px;
+    }
+
+    .progmap-data-flex {
+      flex-direction: row;
+    }
+
+    container > p, .progmap-data-flex p {
+      width: 150px;
+    }
+
+    footer {
+      width: 1305px;
+    }
 
   }
 
