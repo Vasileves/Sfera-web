@@ -3,8 +3,9 @@
   <head>
     <meta http-equiv="Content-Type" content= "text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/ui.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/bg-light.css">
     <link rel="stylesheet" href="css/swiper-min.css">
     <script src="js/swiper-min.js"></script>
@@ -18,13 +19,13 @@
         <img onclick="unwrapMenu()" id='menu-cross' src='img/close.svg'/>
         <ul>
           <li>
-            ГЛАВНАЯ
+            <a href='index.html'>ГЛАВНАЯ</a>
           </li>
           <li>
-            ШКОЛА
+            <a href='school.html'>ШКОЛА</a>
           </li>
           <li>
-            СТУДИЯ РЕГЕНЕРАЦИИ
+            <a href='regen.html'>СТУДИЯ РЕГЕНЕРАЦИИ</a>
           </li>
         </ul>
         <div class='social-container'>
@@ -40,18 +41,23 @@
 
     <nav class='flmenu'>
       <div id= 'menu-content'>
-        <a href='http://google.ru'><img src='img/logo.svg'/></a>
-        <img onclick="unwrapMenu()" style='float: right;' src='img/menu.svg'/>
+        <a href='index.html'><img class='mobile-only' src='img/logo.svg'/></a>
+        <a href='index.html'><img class='desktop-only' src='img/logo-big.svg'/></a>
+        <img class='mobile-only' onclick="unwrapMenu()" style='float: right;' src='img/menu.svg'/>
+        <img class='desktop-only' onclick="unwrapMenu()" style='float: right; width:33.74px;' src='img/menu-big.svg'/>
       </div>
     </nav>
     <div class='page'>
 
-      <!-- BUTTONS -->
+      <!-- INTRO -->
 
       <div class='container' id='intro'>
         <h1>ПОМОЖЕМ<br>СТАТЬ УСПЕШНЕЕ</h1>
       </div>
-      <div class='button-flex'>
+
+      <!-- BUTTONS -->
+
+    <div class='button-flex'>
         <div class='button-big'>
           <img src='img/button_arrow_right.svg'/>
           <p>ШКОЛА<br>ТАЙМ-МЕНЕДЖМЕНТА</p>
@@ -68,37 +74,37 @@
         <div class='container' id='event'>
           <h1>МЕРОПРИЯТИЯ</h1>
           <div class="double-flex">
-            <div class='event-unit'>
-                <h2 class='date'>02.07</h2>
-                <div class='divider'></div>
+            <div>
+              <h2 class='date'>02.07</h2>
+              <div class='divider'></div>
               <div class='event-content'>
                 <img class="mobile-only" src="img/event/nomob.png"/>
                 <div>
                   <h3>14:40</h3>
                   <p>ЛЕКЦИЯ «ПРОДУКТИВНОСТЬ ДЛЯ СТУДЕНТОВ»</p>
-                <img class="desktop-only" src="img/event/nomob.png"/>
-              </div>
+                  <img class="desktop-only" src="img/event/nomob.png"/>
+                </div>
               </div>
             </div>
-            <div class='event-unit'>
+            <div>
               <div class='samedate'></div>
               <div class='event-content'>
                 <img class='mobile-only' src="img/event/nomob.png"/>
                 <div>
                   <h3>11:32</h3>
-                  <p>АНОНС НОВЫХ КУРСОСВ</p>
+                  <p>ВОРКШРП <br>«КАК СВЕРСТАТЬ САЙТ ЗА СУТКИ» </p>
                   <img class="desktop-only" src="img/event/nomob.png"/>
                 </div>
               </div>
             </div>
-            <div class='event-unit desktop-only'>
+            <div class='desktop-only'>
               <h2 class='date'>05.07</h2>
               <div class='divider'></div>
               <div class='event-content'>
                 <img class='mobile-only' src="img/event/nomob.png"/>
                 <div>
                   <h3>08:25</h3>
-                  <p>АНОНС НОВЫХ КУРСОСВ</p>
+                  <p>АНОНС НОВЫХ<br>ОНЛАЙН-КУРСОВ (ТРАНСЛЯЦИЯ)</p>
                   <img class="desktop-only" src="img/event/nomob.png"/>
                 </div>
               </div>
@@ -131,7 +137,7 @@
           <div class='container' id='news'>
             <h1>НОВОСТИ</h1>
             <div class='news-content'>
-              <p>ТРЕТИЙ КОМПЛЕКС ОТКРОЕТСЯ  <br>В СОКОЛЬНИКАХ</p>
+              <p>ТРЕТИЙ КОМПЛЕКС ОТКРОЕТСЯ <br>В СОКОЛЬНИКАХ</p>
               <div class='divider'></div>
               <p>НОВЫЙ КУРС ПЕРЕЗАГРУЗКА: <br>ПОДРОБНОСТИ И СТОИМОСТЬ</p>
               <div class='divider'></div>
@@ -149,14 +155,11 @@
         </div>
       </div>
     </div>
-
-
     <footer>
       <p>© СФЕРА (2019-2023)</p>
     </footer>
 
-
-    <!-- scripts -->
+    <!-- SCRIPTS -->
 
     <script type="text/javascript">
       var viewportWidth = window.innerWidth || document.documentElement.clientWidth;

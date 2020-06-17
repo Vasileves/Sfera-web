@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content= "text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/ui.css">
+    <link rel="stylesheet" type="text/css" href="css/school.css">
+    <link rel="stylesheet" type="text/css" href="css/bg-light.css">
+    <link rel="stylesheet" href="css/swiper-min.css">
+    <script src="js/swiper-min.js"></script>
+  </head>
+  <body>
+
+    <!-- MENU WRAPPER -->
+
+    <div id='menu-wrapper'>
+      <div class='menu-container container'>
+        <img onclick="unwrapMenu()" id='menu-cross' src='img/close.svg'/>
+        <ul>
+          <li>
+            <a href='index.html'>ГЛАВНАЯ</a>
+          </li>
+          <li>
+            <a href='school.html'>ШКОЛА</a>
+          </li>
+          <li>
+            <a href='regen.html'>СТУДИЯ РЕГЕНЕРАЦИИ</a>
+          </li>
+        </ul>
+        <div class='social-container'>
+          <img src='img/social/vk.png'/>
+          <img src='img/social/fb.png'/>
+          <img src='img/social/twitter.png'/>
+          <img src='img/social/call.png'/>
+        </div>
+      </div>
+    </div>
+
+    <!-- MENU -->
+
+    <nav class='flmenu'>
+      <div id= 'menu-content'>
+        <a href='index.html'><img class='mobile-only' src='img/logo.svg'/></a>
+        <a href='index.html'><img class='desktop-only' src='img/logo-big.svg'/></a>
+        <img class='mobile-only' onclick="unwrapMenu()" style='float: right;' src='img/menu.svg'/>
+        <img class='desktop-only' onclick="unwrapMenu()" style='float: right; width:33.74px;' src='img/menu-big.svg'/>
+      </div>
+    </nav>
+    <div class='page'>
+
+
+      <!-- SCHOOL-INTRO -->
+
+    <div class='intro container'>
+      <div class='graphic'></div>
+    </div>
+
+
+
+    <footer>
+      <p>© СФЕРА (2019-2023)</p>
+    </footer>
+
+    <!-- SCRIPTS -->
+
+    <script type="text/javascript">
+      var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+      if (viewportWidth < 1399) {
+      var mySwiper=new Swiper ('.swiper-container', {
+      // Optional parameters
+      direction: 'vertical',
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+      el: '.swiper-pagination',
+      },
+
+      //autoplay and space
+      width: 323,
+      height: 452,
+
+      speed: 2000,
+      spaceBetween: 0,
+      autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+      },
+
+
+      })}
+      else {
+      var mySwiper=new Swiper ('.swiper-container', {
+      // Optional parameters
+      direction: 'vertical',
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+      el: '.swiper-pagination',
+      },
+
+      //autoplay and space
+      width: 225,
+      height: 375,
+
+      speed: 2000,
+      spaceBetween: 0,
+      autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+      },
+
+
+      })}
+    </script>
+    <script type="text/javascript">
+      function unwrapMenu() {
+      var x = document.getElementById("menu-wrapper");
+      if (x.style.display === "none") {
+      x.style.display = "flex";
+      } else {
+      x.style.display = "none";
+      }
+      }
+
+    </script>
+  </body>
+</html>

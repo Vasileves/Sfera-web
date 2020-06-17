@@ -1,0 +1,86 @@
+
+.intro-container .graphic {
+  width: 322px;
+  height: 137px;
+  background-image: url(//img/rect.png);
+}
+
+
+
+/* MOBILE */
+
+@media only screen and (max-device-width : 768px) {
+  img.desktop-only, .desktop-only, .samedate {
+    display: none;
+  }
+
+  #event .double-flex {
+    align-items: flex-start;
+  }
+
+
+  /* TABLET */
+
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1366px) {
+      .double-flex {
+        display: flex;
+        align-items:flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+      }
+
+      .double-flex {
+        display: flex;
+        align-items:flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+      }
+
+
+      #menu-content {
+        width: 671px;
+      }
+
+      img.desktop-only, .desktop-only {
+        display: none;
+      }
+
+}
+
+
+/* DESKTOP */
+
+  @media only screen and (min-device-width : 1366px) {
+
+      .double-flex {
+        display: flex;
+        align-items:flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+      }
+
+      .desktop-flex {
+        display: flex;
+        align-items:flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+      }
+
+      .page {
+        width: 1305px;
+        margin: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+      }
+
+      .double-flex:nth-of-type(2) {
+        margin-left: 38px;
+      }
+
+      img.mobile-only {
+        display: none;
+      }
+
+    }
