@@ -23,7 +23,6 @@ a {
   width: 100vw;
   height: 136px;
   z-index: 20;
-  background: linear-gradient(180.21deg, #E2F2FF 3.08%, rgba(202, 226, 248, 0.95) 62.85%, rgba(209, 234, 255, 0) 99.5%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,6 +63,32 @@ a {
   pointer-events: all;
 }
 
+.goback {
+  width: 323px;
+}
+
+.goback > div {
+  transition-duration: 0.5s;
+  background-color: #fff;
+  width: 35px;
+  height: 35px;
+  border-radius: 90pt;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.goback > div:hover {
+  background-color: #F2F2F2;
+  box-shadow: 0px 14px 13px rgba(0, 0, 0, 0.16);
+}
+
+.goback > div:active {
+  background-color: #E4E4E4;
+  transform: translateY(2px);
+  box-shadow: 0px 11px 12px rgba(0, 0, 0, 0.2);
+}
 
 .social-container {
   padding-left: 20px;
@@ -239,6 +264,16 @@ footer p {
 
 @media only screen and (max-device-width : 768px) {
 
+  .container h1 {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: 0.07em;
+    color: #000000;
+  }
+
 }
 
 
@@ -257,6 +292,10 @@ footer p {
       align-items:flex-start;
       justify-content: flex-start;
       flex-direction: row;
+    }
+
+    .goback {
+      width: 671px;
     }
 
 
@@ -285,7 +324,7 @@ footer p {
       }
 
       .page {
-        width: 1305px;
+        width: 1303px;
         margin: auto;
         display: flex;
         align-items: flex-start;
@@ -298,10 +337,11 @@ footer p {
       }
 
       #menu-content {
-        width: 1271px;
+        width: 1305px;
       }
 
       img.mobile-only {
         display: none;
       }
+
     }

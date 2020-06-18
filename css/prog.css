@@ -21,8 +21,6 @@
 }
 
 
-
-
 .container h1 {
   margin-bottom: 25px;
 }
@@ -93,7 +91,27 @@ align-items: center;
 }
 
 
+#phone {
+  position: absolute;
+  margin-left: 12px;
+  margin-top: 24px;
+}
 
+#google {
+  position: absolute;
+  margin-left: 138px;
+  margin-top: 47px;
+}
+
+#apple {
+  position: absolute;
+  margin-left: 138px;
+  margin-top: 97px;
+}
+
+.app:nth-of-type(2) {
+  height: 355px;
+}
 
 
 /* PHONE */
@@ -104,7 +122,8 @@ align-items: center;
   }
 
   #intro {
-    max-height: 500px;
+    min-height: 520px;
+    max-height: 520px;
   }
 
   #intro h1 {
@@ -221,6 +240,7 @@ align-items: center;
     width: 250px;
     height: 150px;
     margin-left: 0;
+    margin-top: 25px;
   }
 
   .app {
@@ -247,6 +267,7 @@ align-items: center;
 
   .progmap-data-flex {
     flex-direction: column;
+    margin-top: 0;
   }
 
   .progmap-data-flex div {
@@ -341,24 +362,6 @@ align-items: center;
 
     .app {
       height: 355px;
-    }
-
-    #phone {
-      position: absolute;
-      margin-left: 12px;
-      margin-top: 24px;
-    }
-
-    #google {
-      position: absolute;
-      margin-left: 138px;
-      margin-top: 47px;
-    }
-
-    #apple {
-      position: absolute;
-      margin-left: 138px;
-      margin-top: 97px;
     }
 
     .graphic {

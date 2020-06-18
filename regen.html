@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content= "text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/swiper-min.css">
+    <link rel="stylesheet" type="text/css" href="css/ui.css">
+    <link rel="stylesheet" type="text/css" href="css/regen.css">
+    <link rel="stylesheet" type="text/css" href="css/bg-dark.css">
+    <script src="js/swiper.js"></script>
+    <script src="js/swiper-min.js"></script>
+  </head>
+  <body>
+    <!-- MENU WRAPPER -->
+    <div id='menu-wrapper'>
+      <div class='menu-container container'>
+        <img onclick="unwrapMenu()" id='menu-cross' src='img/close.svg'/>
+        <ul>
+          <li>
+            <a href='index.html'>ГЛАВНАЯ</a>
+          </li>
+          <li>
+            <a href='school.html'>ШКОЛА</a>
+          </li>
+          <li>
+            <a href='regen.html'>СТУДИЯ РЕГЕНЕРАЦИИ</a>
+          </li>
+        </ul>
+        <div class='social-container'>
+          <img src='img/social/vk.png'/>
+          <img src='img/social/fb.png'/>
+          <img src='img/social/twitter.png'/>
+          <img src='img/social/call.png'/>
+        </div>
+      </div>
+    </div>
+
+    <!-- MENU STICKY -->
+
+    <nav class='flmenu'>
+      <div id= 'menu-content'>
+        <a href='index.html'><img class='mobile-only' src='img/logo.svg'/></a>
+        <a href='index.html'><img class='desktop-only' style=' height: 36px;' src='img/logo-big-regen.svg'/></a>
+        <img class='mobile-only' onclick="unwrapMenu()" style='float: right;' src='img/menu-white.svg'/>
+        <img class='desktop-only' onclick="unwrapMenu()" style='float: right; height:23px;' src='img/menu-big-white.svg'/>
+      </div>
+    </nav>
+
+
+    <div class='page'>
+
+    <div class='goback'onclick="history.back()" ><div><img src='img/back.svg'/></div></div>
+
+    <!-- PROG-INTRO -->
+
+    <div class='container' id="intro">
+      <div class="double-flex"><video class='graphic' id="video" controls preload autoplay loop muted playsinline>
+        <source src="sfera-cam.mp4" type="video/mp4"></source>
+      </video>
+      <div id='prog-content'>
+      <h1>Когда нет времени на отдых</h1>
+      <p id='prog-desc'>
+        Самоорганизация — крайне ценный в наше время навык, к тренировке которого нужен основательный подход.
+      </p>
+    </div>
+    </div>
+  </div>
+
+<div class="double-flex">
+<div class='container mapnote'>
+<img src='img/map/sleep.png'/>
+<h1>Капсулы <br>для сна</h1>
+<p>Восстановите силы<br>в наших уникальных кислородных капсулах</p>
+</div>
+
+<div class='container mapnote'>
+<img src='img/map/food.png'/>
+<h1>Новый<br>биокафетерий</h1>
+<p>Наши нанобоулы зарядят витаминами<br>и утолят голод<br>на несколько дней</p>
+</div>
+</div>
+<div class="double-flex">
+<div class='container mapnote'>
+<img src='img/map/shower.png'/>
+<h1>Автоматический<br>душ</h1>
+<p>Вы и ваша одежда будут чистыми всего<br>за десять минут!</p>
+</div>
+
+<div class='container mapnote'>
+<img src='img/map/style.png'/>
+<h1>AR<br>стилист</h1>
+<p>Позвольте нашим алгоритмам превратить вас в совершенство</p>
+</div>
+</div>
+<div class='container' id='map'></div>
+<div class='container plan'>
+<!-- Slider main container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <h1>ЭКСПРЕСС</h1>
+          <ul>
+            <li>
+              Капсулы – 30 минут
+            </li>
+            <li>
+              Душ
+            </li>
+          </ul>
+          <h1>ДЛИТЕЛЬНОСТЬ</h1>
+          <p>40 мин.</p>
+          </div>
+        <div class="swiper-slide">
+          <h1>КОМФОРТ</h1>
+          <ul>
+            <li>
+              Капсулы – 40 минут
+            </li>
+            <li>
+              Душ
+            </li>
+            <li>
+              Биокафетерий
+            </li>
+          </ul>
+          <h1>ДЛИТЕЛЬНОСТЬ</h1>
+          <p>40 мин.</p>
+          </div>
+        <div class="swiper-slide">
+          <h1>УЛЬТИМА</h1>
+          <ul>
+            <li>
+              Капсулы – 120 минут
+            </li>
+            <li>
+              Душ
+            </li>
+            <li>
+              Биокафетерий
+            </li>
+            <li>
+              Стилист
+            </li>
+          </ul>
+          <h1>ДЛИТЕЛЬНОСТЬ</h1>
+          <p>40 мин.</p>
+          </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+</div>
+</div>
+
+
+<footer>
+  <p>© СФЕРА (2019-2023)</p>
+</footer>
+
+  <!-- SCRIPTS -->
+
+  <script>
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+    },
+  })
+  </script>
+
+  <script type="text/javascript">
+    function unwrapMenu() {
+    var x = document.getElementById("menu-wrapper");
+    if (x.style.display === "none") {
+    x.style.display = "flex";
+    } else {
+    x.style.display = "none";
+    }
+    }
+
+  </script>
+
+  </body>
+</html>

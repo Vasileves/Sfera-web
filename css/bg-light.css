@@ -5,3 +5,8 @@ body {
   background-image: url(../img/bg.png);
   background-repeat: repeat;
 }
+
+
+.flmenu {
+  background: linear-gradient(180.21deg, #E2F2FF 3.08%, rgba(202, 226, 248, 0.95) 62.85%, rgba(209, 234, 255, 0) 99.5%);
+}

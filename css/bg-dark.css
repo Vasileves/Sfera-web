@@ -1,0 +1,16 @@
+
+body {
+  background-color: #11407D;
+  /* background-size: 110%; */
+  background-image: url(../img/bg2.png);
+  background-repeat: repeat;
+}
+
+
+.flmenu {
+background: linear-gradient(180.13deg, #174B8D 49.14%, rgba(143, 188, 245, 0) 97.66%);
+}
+
+footer {
+  color: #fff;
+}

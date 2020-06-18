@@ -121,6 +121,10 @@
     display: none;
   }
 
+  .date {
+    font-size: 15pt;
+  }
+
   #event .double-flex {
     align-items: flex-start;
   }
@@ -184,9 +188,7 @@
     }
 
 
-    #menu-content {
-      width: 671px;
-    }
+
 
     img.desktop-only, .desktop-only {
       display: none;
@@ -218,7 +220,7 @@
           height: 55px;
         }
 
-        img.desktop-only {
+        .event-content img.desktop-only {
           margin-top: 22px;
           width: 178px;
           height: 115px;
@@ -270,9 +272,7 @@
         width: 305px;
       }
 
-      #menu-content {
-        width: 1271px;
-      }
+
 
       .slider {
         width: 225px;
