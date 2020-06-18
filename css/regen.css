@@ -74,7 +74,7 @@ align-items: center;
 width: 221px;
 }
 
-.mapnote h1, #intro h1 {
+.mapnote h1{
   font-family: IBM Plex Sans;
   font-style: normal;
   font-weight: bold;
@@ -117,7 +117,7 @@ width: 221px;
     margin-left: 25px;
   }
 
-  li {
+  .plan li {
     font-family: IBM Plex Sans;
     font-style: normal;
     font-weight: normal;
@@ -130,10 +130,22 @@ width: 221px;
   }
 
 
+
+  #flex-plan {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  }
+
+  #flex-plan div:not(:first-of-type) {
+    margin-left: 34px;
+  }
+
+
 /* PHONE */
 
 @media only screen and (max-device-width : 768px) {
-  img.desktop-only, .desktop-only {
+  img.desktop-only, .desktop-only, #flex-plan {
     display: none;
   }
 
@@ -155,6 +167,10 @@ width: 221px;
     margin-top: 20px;
   }
 
+  #map {
+    background-size: contain;
+  }
+
 
 }
 
@@ -162,7 +178,7 @@ width: 221px;
 /* TABLET */
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1366px) {
-  img.desktop-only, .desktop-only {
+  img.desktop-only, .desktop-only, .mobile-phone-only {
     display: none;
   }
   .double-flex .container:first-of-type {
@@ -179,15 +195,20 @@ width: 221px;
     height: 400px;
   }
 
-  #intro h1 {
-    padding-left: 0;
-    font-size: 22px;
-  }
 
   #prog-content {
     margin-left: 32px;
     width: 300px;
   }
+  #intro h1 {
+    font-size: 17pt;
+  }
+
+  #mapflex
+  {
+    flex-direction: column;
+  }
+
 
   #prog-desc {
     font-size: 13pt;
@@ -214,6 +235,12 @@ width: 221px;
     #intro h1 {
       padding-left: 0;
       font-size: 22px;
+    }
+
+    #map {
+    width: 583px;
+    height: 460px;
+    max-height: 1000px;
     }
 
     #prog-content {
