@@ -207,6 +207,10 @@ a {
   background-color: #D9DDE0;
 }
 
+.button-small:active {
+  background-color: #C5C5C5;
+}
+
 .button-small p {
   flex: 1 1 auto;
   font-family: IBM Plex Sans;

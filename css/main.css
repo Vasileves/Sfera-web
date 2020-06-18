@@ -14,6 +14,10 @@
   border-radius: 20px;
 }
 
+.slider:active {
+  transform: scale(0.95);
+}
+
 .swiper-container img {
   transform: translateX(-2px);
   width: 325px;
