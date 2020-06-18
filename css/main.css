@@ -21,8 +21,6 @@
 }
 
 
-#canvas{
-}
 
 .swiper-wrapper {
     border-radius: 20px;
@@ -135,8 +133,11 @@
   }
 
   #INTRO {
-    height: 137px;
+  max-height: 137px;
+  min-height: 137px;
+  overflow: hidden;
   }
+
   .divider {
   margin-bottom: 30px;
   }

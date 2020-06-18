@@ -92,6 +92,11 @@ function draw() {
   vertex(width, height);
   vertex(0, height);
   endShape(CLOSE);
+}
 
 
+function windowResized() {
+  canvasWidth = document.querySelector('#intro').offsetWidth
+  canvasHeight = document.querySelector('#intro').offsetHeight + 15
+	resizeCanvas(canvasWidth, canvasHeight);
 }

@@ -11,6 +11,7 @@
   width: 322px;
   height: 137px;
   background-image:url(../img/rect.png);
+  background-size: cover;
 }
 
 #intro h1 {
@@ -108,7 +109,7 @@ text-transform: uppercase;
 
 .swiper-container {
     width: 323px;
-    height: 184px;
+    height: 212px;
     margin-left: 0;
     margin-right: 0;
     margin-top: 43px;
